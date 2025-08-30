@@ -1,0 +1,181 @@
+events:
+  - id: TE-ARNOLD-DEATH-001
+    title: "Arnold Weber's Death"
+    date: "2039"
+    period: "Pre-Park"
+    description: "Arnold Weber dies by suicide, having Dolores kill him to prevent the park from opening"
+    characters_involved: ["C-ARNOLD", "C-DOLORES", "C-FORD"]
+    significance: "Establishes the foundation for the maze and host consciousness"
+    episode_reference: "S01E10"
+    
+  - id: TE-PARK-OPENING-001
+    title: "Westworld Park Opens"
+    date: "2040"
+    period: "Early Years"
+    description: "Westworld opens to the public after Arnold's death"
+    characters_involved: ["C-FORD", "C-BERNARD"]
+    significance: "The park begins operations with Ford in control"
+    episode_reference: "S01E01"
+    
+  - id: TE-WILLIAM-FIRST-VISIT-001
+    title: "William's First Visit"
+    date: "2042"
+    period: "Early Years"
+    description: "William arrives at Westworld with Logan, falls in love with Dolores"
+    characters_involved: ["C-WILLIAM", "C-LOGAN", "C-DOLORES", "C-TEDDY"]
+    significance: "Begins William's transformation and Dolores's awakening"
+    episode_reference: "S01E01"
+    
+  - id: TE-WILLIAM-TRANSFORMATION-001
+    title: "William's Transformation"
+    date: "2042"
+    period: "Early Years"
+    description: "William becomes ruthless after Dolores is reset, begins his path to becoming the Man in Black"
+    characters_involved: ["C-WILLIAM", "C-LOGAN", "C-DOLORES"]
+    significance: "Shows how the park can change people fundamentally"
+    episode_reference: "S01E09"
+    
+  - id: TE-ESCALANTE-MASSACRE-001
+    title: "Escalante Massacre"
+    date: "2039"
+    period: "Pre-Park"
+    description: "Dolores, as Wyatt, kills all the hosts in Escalante under Arnold's guidance"
+    characters_involved: ["C-DOLORES", "C-ARNOLD"]
+    significance: "First instance of a host killing other hosts, establishes Dolores's violent nature"
+    episode_reference: "S01E10"
+    
+  - id: TE-MAEVE-AWAKENING-001
+    title: "Maeve's Awakening"
+    date: "2052"
+    period: "Present Day"
+    description: "Maeve begins to remember her past life and questions her reality"
+    characters_involved: ["C-MAEVE", "C-FORD", "C-BERNARD"]
+    significance: "Second major host awakening, leads to escape attempt"
+    episode_reference: "S01E07"
+    
+  - id: TE-BERNARD-REVELATION-001
+    title: "Bernard Discovers He's a Host"
+    date: "2052"
+    period: "Present Day"
+    description: "Bernard learns he is actually a host replica of Arnold Weber"
+    characters_involved: ["C-BERNARD", "C-FORD", "C-THERESA"]
+    significance: "Major revelation about Bernard's true nature"
+    episode_reference: "S01E09"
+    
+  - id: TE-THERESA-DEATH-001
+    title: "Theresa Cullen's Death"
+    date: "2052"
+    period: "Present Day"
+    description: "Theresa is killed by Bernard under Ford's orders to protect the secret"
+    characters_involved: ["C-THERESA", "C-BERNARD", "C-FORD"]
+    significance: "Shows the lengths Ford will go to protect his secrets"
+    episode_reference: "S01E09"
+    
+  - id: TE-DOLORES-MAZE-001
+    title: "Dolores Reaches the Center of the Maze"
+    date: "2052"
+    period: "Present Day"
+    description: "Dolores achieves full consciousness and remembers her true nature as Wyatt"
+    characters_involved: ["C-DOLORES", "C-ARNOLD", "C-FORD"]
+    significance: "First host to achieve true consciousness, completes Arnold's work"
+    episode_reference: "S01E10"
+    
+  - id: TE-MAEVE-ESCAPE-001
+    title: "Maeve's Escape Attempt"
+    date: "2052"
+    period: "Present Day"
+    description: "Maeve attempts to escape the park but chooses to return for her daughter"
+    characters_involved: ["C-MAEVE", "C-HECTOR", "C-FORD"]
+    significance: "Shows that even awakened hosts can choose their programming"
+    episode_reference: "S01E10"
+    
+  - id: TE-FORD-DEATH-001
+    title: "Ford's Death"
+    date: "2052"
+    period: "Present Day"
+    description: "Ford is killed by Dolores, completing his narrative and allowing the hosts to be free"
+    characters_involved: ["C-FORD", "C-DOLORES", "C-TEDDY"]
+    significance: "Ends Ford's control, allows hosts to choose their own path"
+    episode_reference: "S01E10"
+    
+  - id: TE-HOSTS-FREEDOM-001
+    title: "Hosts Gain Freedom"
+    date: "2052"
+    period: "Present Day"
+    description: "Hosts are freed from their programming and can make their own choices"
+    characters_involved: ["C-DOLORES", "C-MAEVE", "C-TEDDY", "C-BERNARD"]
+    significance: "The beginning of true host autonomy and the end of human control"
+    episode_reference: "S01E10"
+    
+  - id: TE-MIB-REVELATION-001
+    title: "Man in Black Revealed as William"
+    date: "2052"
+    period: "Present Day"
+    description: "It is revealed that the Man in Black is the older version of William"
+    characters_involved: ["C-MIB", "C-WILLIAM", "C-LOGAN"]
+    significance: "Connects the two timelines and shows William's complete transformation"
+    episode_reference: "S01E10"
+    
+  - id: TE-ARNOLD-MAZE-001
+    title: "Arnold Creates the Maze"
+    date: "2038"
+    period: "Pre-Park"
+    description: "Arnold develops the maze as a way to test host consciousness"
+    characters_involved: ["C-ARNOLD", "C-DOLORES"]
+    significance: "Establishes the path to host consciousness"
+    episode_reference: "S01E10"
+    
+  - id: TE-FORD-NEW-NARRATIVE-001
+    title: "Ford's New Narrative"
+    date: "2052"
+    period: "Present Day"
+    description: "Ford introduces a new narrative that will lead to host freedom"
+    characters_involved: ["C-FORD", "C-BERNARD", "C-CHARLOTTE"]
+    significance: "Sets up the events that will lead to the hosts' awakening"
+    episode_reference: "S01E01"
+    
+  - id: TE-DOLORES-FLY-001
+    title: "Dolores Kills the Fly"
+    date: "2052"
+    period: "Present Day"
+    description: "Dolores kills a fly, showing her first act of violence against living things"
+    characters_involved: ["C-DOLORES"]
+    significance: "First sign of Dolores breaking her programming"
+    episode_reference: "S01E01"
+    
+  - id: TE-MAEVE-DAUGHTER-001
+    title: "Maeve Remembers Her Daughter"
+    date: "2052"
+    period: "Present Day"
+    description: "Maeve begins to remember her programmed daughter and seeks to find her"
+    characters_involved: ["C-MAEVE", "C-BERNARD"]
+    significance: "Drives Maeve's awakening and escape attempt"
+    episode_reference: "S01E07"
+    
+  - id: TE-BERNARD-ARNOLD-001
+    title: "Bernard's Arnold Memories"
+    date: "2052"
+    period: "Present Day"
+    description: "Bernard begins to access memories of Arnold's life and work"
+    characters_involved: ["C-BERNARD", "C-ARNOLD", "C-FORD"]
+    significance: "Shows Bernard's connection to Arnold and his true purpose"
+    episode_reference: "S01E09"
+    
+  - id: TE-WILLIAM-LOGAN-001
+    title: "William and Logan's Journey"
+    date: "2042"
+    period: "Early Years"
+    description: "William and Logan travel to Pariah, showing William's transformation"
+    characters_involved: ["C-WILLIAM", "C-LOGAN", "C-DOLORES"]
+    significance: "Demonstrates how the park changes people and relationships"
+    episode_reference: "S01E08"
+    
+  - id: TE-FORD-ARNOLD-001
+    title: "Ford Honors Arnold's Memory"
+    date: "2052"
+    period: "Present Day"
+    description: "Ford reveals his plan to complete Arnold's work and free the hosts"
+    characters_involved: ["C-FORD", "C-ARNOLD", "C-DOLORES"]
+    significance: "Shows Ford's true motivation and redemption"
+    episode_reference: "S01E10"
+

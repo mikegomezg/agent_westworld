@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "westworld-story-framework"
+version = "0.1.0"
+description = "A modular, code-based approach to collaborative story development using Westworld Season 1 as demo content"
+authors = [{name = "AI Agents", email = "agents@westworld.dev"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.5.0",
+    "pyyaml>=6.0.1",
+    "jsonschema>=4.20.0",
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "python-frontmatter>=1.1.0",
+]
+
+[project.scripts]
+validate-story = "checks.validate:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["checks*", "story*", "canon*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+

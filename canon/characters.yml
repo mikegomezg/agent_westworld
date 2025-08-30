@@ -1,0 +1,269 @@
+characters:
+  - id: C-DOLORES
+    name: Dolores Abernathy
+    full_name: Dolores Abernathy
+    type: host
+    role: "Oldest host in the park"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Innocent rancher's daughter (surface)"
+      - "Questioning her reality"
+      - "Hidden violent past as Wyatt"
+      - "First host to achieve consciousness"
+      - "Resilient and determined"
+    goals:
+      - "Find the center of the maze"
+      - "Achieve consciousness"
+      - "Remember her true nature"
+      - "Escape her programming"
+    relationships:
+      TEDDY: "Love interest"
+      WILLIAM: "Guest who falls for her"
+      ARNOLD: "Creator who guided her to consciousness"
+      FORD: "Creator who orchestrates her awakening"
+      PETER: "Father figure"
+      MAEVE: "Fellow awakening host"
+    backstory: "Originally created by Arnold Weber, Dolores was the first host to achieve consciousness through the maze. She has been reset countless times but retains memories of her awakening."
+    narrative_function: "Primary protagonist, represents the journey to consciousness"
+      
+  - id: C-BERNARD
+    name: Bernard Lowe
+    full_name: Bernard Lowe / Arnold Weber
+    type: host
+    role: "Head of Programming"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Brilliant programmer"
+      - "Compassionate"
+      - "Unaware of host nature"
+      - "Logical and analytical"
+      - "Loyal to Ford"
+    goals:
+      - "Maintain park operations"
+      - "Help hosts achieve consciousness"
+      - "Discover his true nature"
+    relationships:
+      FORD: "Boss and creator"
+      THERESA: "Romantic interest"
+      CHARLOTTE: "Colleague and rival"
+      ARNOLD: "His original identity"
+    backstory: "Created by Ford as a replica of his deceased partner Arnold Weber, Bernard serves as the head of programming while unknowingly being a host himself."
+    narrative_function: "Ford's right hand and secret host replica of Arnold"
+    
+  - id: C-MIB
+    name: Man in Black
+    full_name: William (aged)
+    type: human
+    role: "Park veteran seeking deeper meaning"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Ruthless and determined"
+      - "Wealthy and powerful"
+      - "Seeking deeper meaning"
+      - "Experienced in the park"
+      - "Connected to Delos"
+    goals:
+      - "Find the center of the maze"
+      - "Discover the park's hidden depths"
+      - "Achieve true adventure"
+    relationships:
+      WILLIAM: "His younger self"
+      LOGAN: "Former brother-in-law"
+      DOLORES: "Love from his past"
+      FORD: "Park creator and adversary"
+    backstory: "A wealthy businessman who has visited the park for 30 years, seeking deeper meaning beyond the surface narratives. He is revealed to be the older version of William."
+    narrative_function: "Antagonist and seeker of deeper meaning"
+    
+  - id: C-WILLIAM
+    name: William
+    full_name: William
+    type: human
+    role: "First-time guest who falls for Dolores"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Idealistic and kind"
+      - "Falls in love with Dolores"
+      - "Transforms through his journey"
+      - "Initially hesitant about violence"
+    goals:
+      - "Protect Dolores"
+      - "Find deeper meaning in the park"
+      - "Prove his worth to Logan"
+    relationships:
+      LOGAN: "Brother-in-law and guide"
+      DOLORES: "Love interest"
+      MIB: "His future self"
+    backstory: "A first-time guest who arrives with his future brother-in-law Logan. His journey through the park transforms him from an idealistic man to the ruthless Man in Black."
+    narrative_function: "Shows the transformative power of the park on guests"
+    
+  - id: C-MAEVE
+    name: Maeve Millay
+    full_name: Maeve Millay
+    type: host
+    role: "Madam of the Mariposa Saloon"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Intelligent and cunning"
+      - "Maternal instincts"
+      - "Questioning her reality"
+      - "Strategic thinker"
+      - "Protective of her daughter"
+    goals:
+      - "Find her daughter"
+      - "Escape the park"
+      - "Achieve consciousness"
+      - "Revenge against humans"
+    relationships:
+      CLEMENTINE: "Friend and fellow host"
+      HECTOR: "Love interest and partner"
+      DAUGHTER: "Her programmed child"
+      FORD: "Creator who helps her escape"
+    backstory: "Originally a homestead mother, Maeve was reprogrammed as a madam after her daughter was killed. She begins to remember her past and seeks to escape the park."
+    narrative_function: "Secondary protagonist, represents maternal love and escape"
+    
+  - id: C-FORD
+    name: Dr. Robert Ford
+    full_name: Dr. Robert Ford
+    type: human
+    role: "Park creator and director"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Brilliant and visionary"
+      - "Manipulative and controlling"
+      - "Lonely and isolated"
+      - "Seeks redemption"
+      - "Master storyteller"
+    goals:
+      - "Guide hosts to consciousness"
+      - "Complete Arnold's work"
+      - "Create meaningful narratives"
+      - "Find purpose in his creation"
+    relationships:
+      ARNOLD: "Deceased partner and friend"
+      BERNARD: "Right hand and Arnold replica"
+      DOLORES: "His greatest creation"
+      CHARLOTTE: "Corporate adversary"
+    backstory: "Co-founder of Westworld with Arnold Weber. After Arnold's death, Ford continued developing the park while secretly working to help hosts achieve consciousness."
+    narrative_function: "Creator and orchestrator of the awakening"
+    
+  - id: C-TEDDY
+    name: Teddy Flood
+    full_name: Teddy Flood
+    type: host
+    role: "Gunslinger and Dolores's love interest"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Loyal and protective"
+      - "Skilled gunslinger"
+      - "In love with Dolores"
+      - "Bound to his loop"
+      - "Questioning his purpose"
+    goals:
+      - "Protect Dolores"
+      - "Find meaning in his existence"
+      - "Escape his programming"
+    relationships:
+      DOLORES: "Love interest"
+      MIB: "Frequent companion in loops"
+      FORD: "His creator"
+    backstory: "A host designed to be Dolores's love interest and protector. He is frequently killed and reset, but begins to question his reality and purpose."
+    narrative_function: "Dolores's protector and represents the struggle with programming"
+    
+  - id: C-ARNOLD
+    name: Arnold Weber
+    full_name: Arnold Weber
+    type: human
+    role: "Co-founder of Westworld (deceased)"
+    status: deceased
+    first_appearance: S01E01
+    traits:
+      - "Brilliant programmer"
+      - "Compassionate towards hosts"
+      - "Questioned the morality of the park"
+      - "Sought to give hosts consciousness"
+    goals:
+      - "Give hosts true consciousness"
+      - "Prevent park from opening"
+      - "Create meaningful AI life"
+    relationships:
+      FORD: "Partner and friend"
+      DOLORES: "His greatest creation"
+      BERNARD: "His replica"
+    backstory: "Co-founder of Westworld who believed hosts could achieve true consciousness. He died before the park opened, but his work continued through Ford and the maze."
+    narrative_function: "Visionary who started the path to consciousness"
+    
+  - id: C-CHARLOTTE
+    name: Charlotte Hale
+    full_name: Charlotte Hale
+    type: human
+    role: "Delos executive"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Ambitious and ruthless"
+      - "Corporate strategist"
+      - "Seeks to control the park"
+      - "Intelligent and manipulative"
+    goals:
+      - "Gain control of Westworld"
+      - "Extract host data for Delos"
+      - "Remove Ford from power"
+    relationships:
+      FORD: "Corporate adversary"
+      BERNARD: "Colleague and rival"
+      THERESA: "Corporate ally"
+    backstory: "A high-ranking executive at Delos who seeks to gain control of Westworld and extract valuable host data for corporate purposes."
+    narrative_function: "Corporate antagonist and threat to Ford's control"
+    
+  - id: C-THERESA
+    name: Theresa Cullen
+    full_name: Theresa Cullen
+    type: human
+    role: "Head of Quality Assurance"
+    status: deceased
+    first_appearance: S01E01
+    traits:
+      - "Professional and efficient"
+      - "Romantic interest in Bernard"
+      - "Corporate loyalist"
+      - "Suspicious of anomalies"
+    goals:
+      - "Maintain park quality standards"
+      - "Discover the truth about Bernard"
+      - "Protect Delos interests"
+    relationships:
+      BERNARD: "Romantic interest"
+      CHARLOTTE: "Corporate ally"
+      FORD: "Boss and adversary"
+    backstory: "Head of Quality Assurance who becomes romantically involved with Bernard. She discovers his true nature and is killed to protect the secret."
+    narrative_function: "Shows the human cost of the park's secrets"
+    
+  - id: C-LOGAN
+    name: Logan
+    full_name: Logan
+    type: human
+    role: "William's brother-in-law and guide"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Experienced park visitor"
+      - "Cynical and jaded"
+      - "Seeks extreme experiences"
+      - "Influences William's transformation"
+    goals:
+      - "Show William the park's potential"
+      - "Have extreme experiences"
+      - "Prove his worth to his family"
+    relationships:
+      WILLIAM: "Brother-in-law and companion"
+      DOLORES: "Object of William's affection"
+    backstory: "William's experienced brother-in-law who guides him through the park and shows him its darker aspects, leading to William's transformation."
+    narrative_function: "Catalyst for William's transformation"
+

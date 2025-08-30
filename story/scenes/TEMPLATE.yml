@@ -1,0 +1,20 @@
+# Scene Template
+# Copy this template and fill in the details for your new scene
+
+id: S01E01-001
+episode: S01E01
+title: "Scene Title"
+location: L-SWEETWATER
+characters: ["C-DOLORES", "C-TEDDY"]
+timestamp: "Morning"
+synopsis: "Brief description of what happens in this scene. Focus on the key events, character interactions, and any important revelations or developments."
+
+themes: ["T-CONSCIOUSNESS", "T-MEMORY"]
+reveals: ["What new information is discovered in this scene"]
+conflicts: ["What challenges or obstacles arise"]
+
+# Additional fields you can add:
+# dialogue: ["Key lines of dialogue from the scene"]
+# emotions: ["Emotional states of characters"]
+# actions: ["Specific actions that occur"]
+# connections: ["How this scene connects to other events or themes"]

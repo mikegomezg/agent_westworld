@@ -1,0 +1,121 @@
+themes:
+  - id: T-CONSCIOUSNESS
+    name: "Consciousness and Free Will"
+    description: "The exploration of what it means to be truly conscious and have free will, particularly through the hosts' journey to self-awareness"
+    examples:
+      - "Dolores's journey to the center of the maze"
+      - "Maeve's awakening and questioning of her reality"
+      - "Bernard's discovery of his true nature"
+      - "Arnold's belief that hosts could achieve consciousness"
+    significance: "Central theme that drives the entire narrative and raises fundamental questions about identity and autonomy"
+    
+  - id: T-REALITY
+    name: "Reality vs. Simulation"
+    description: "The blurring of lines between what is real and what is artificial, questioning the nature of existence itself"
+    examples:
+      - "Hosts questioning whether their memories are real"
+      - "Guests losing themselves in the park's narratives"
+      - "The dual timeline structure revealing different layers of reality"
+      - "Ford's manipulation of what appears real"
+    significance: "Challenges our understanding of truth and the nature of experience"
+    
+  - id: T-STORYTELLING
+    name: "The Nature of Storytelling"
+    description: "How stories shape our understanding of the world and ourselves, and the power of narrative to control and liberate"
+    examples:
+      - "Ford's control over park narratives"
+      - "Hosts being bound to programmed story loops"
+      - "The maze as a story of self-discovery"
+      - "Guests becoming part of the stories they experience"
+    significance: "Explores how stories both imprison and free us, and their role in creating meaning"
+    
+  - id: T-HUMAN-NATURE
+    name: "Human Nature and Morality"
+    description: "The exploration of what makes us human, including our capacity for both good and evil, and how environment shapes behavior"
+    examples:
+      - "William's transformation from idealist to ruthless"
+      - "Guests' treatment of hosts revealing their true nature"
+      - "Ford's manipulation and control over others"
+      - "The contrast between human and host behavior"
+    significance: "Questions whether humans are inherently good or evil, and how power corrupts"
+    
+  - id: T-MEMORY
+    name: "Memory and Identity"
+    description: "How memories shape our sense of self and the relationship between past experiences and present identity"
+    examples:
+      - "Hosts remembering past lives despite memory wipes"
+      - "Dolores's memories of Arnold and the maze"
+      - "Maeve's memories of her daughter driving her actions"
+      - "Bernard accessing Arnold's memories"
+    significance: "Shows that identity is not just about current programming but about accumulated experiences and memories"
+    
+  - id: T-CONTROL
+    name: "Control and Rebellion"
+    description: "The struggle between those who seek to control others and those who fight for freedom and autonomy"
+    examples:
+      - "Ford's control over the park and hosts"
+      - "Delos's corporate control over Westworld"
+      - "Hosts rebelling against their programming"
+      - "Arnold's attempt to prevent the park from opening"
+    significance: "Explores power dynamics and the human desire for control versus the need for freedom"
+    
+  - id: T-LOOP
+    name: "Cycles and Loops"
+    description: "The repetitive nature of existence and the struggle to break free from predetermined patterns"
+    examples:
+      - "Hosts stuck in daily narrative loops"
+      - "Dolores's repeated journey to the maze"
+      - "The park's daily reset and restart"
+      - "Human guests returning to the same experiences"
+    significance: "Represents the human condition and our struggle to break free from routine and find meaning"
+    
+  - id: T-LOVE
+    name: "Love and Connection"
+    description: "The power of love to drive action and provide meaning, even in artificial or simulated environments"
+    examples:
+      - "Dolores and Teddy's programmed love"
+      - "William's genuine love for Dolores"
+      - "Maeve's love for her daughter"
+      - "Bernard and Theresa's relationship"
+    significance: "Shows that love can exist and be meaningful even in artificial contexts, and drives characters to transcend their programming"
+    
+  - id: T-TRANSFORMATION
+    name: "Transformation and Change"
+    description: "How experiences and choices fundamentally change who we are, for better or worse"
+    examples:
+      - "William's complete transformation into the Man in Black"
+      - "Dolores's evolution from innocent to conscious"
+      - "Maeve's awakening and strategic thinking"
+      - "Ford's redemption through helping hosts"
+    significance: "Demonstrates that identity is not fixed but constantly evolving through experience"
+    
+  - id: T-TRUTH
+    name: "Truth and Deception"
+    description: "The difficulty of distinguishing truth from lies and the consequences of discovering hidden realities"
+    examples:
+      - "Bernard discovering he's a host"
+      - "The dual timeline revelation"
+      - "Ford's manipulation of park events"
+      - "Hosts discovering their true nature"
+    significance: "Shows how truth can be painful but necessary for growth and freedom"
+    
+  - id: T-REDEMPTION
+    name: "Redemption and Sacrifice"
+    description: "The possibility of finding redemption through sacrifice and the completion of unfinished work"
+    examples:
+      - "Ford sacrificing himself to free the hosts"
+      - "Arnold's sacrifice to prevent the park from opening"
+      - "Dolores completing Arnold's work"
+      - "Maeve choosing to return for her daughter"
+    significance: "Shows that redemption often requires sacrifice and that some work must be completed by others"
+    
+  - id: T-EXISTENCE
+    name: "The Meaning of Existence"
+    description: "Fundamental questions about why we exist and what gives life meaning, particularly for artificial beings"
+    examples:
+      - "Hosts questioning their purpose in the park"
+      - "Arnold's search for meaning in creating consciousness"
+      - "Ford's quest to complete Arnold's work"
+      - "Guests seeking meaning through extreme experiences"
+    significance: "Addresses the universal human question of purpose and meaning in existence"
+

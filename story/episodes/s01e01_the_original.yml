@@ -1,0 +1,57 @@
+id: S01E01
+title: "The Original"
+air_date: "2016-10-02"
+director: "Jonathan Nolan"
+writers: ["Jonathan Nolan", "Lisa Joy"]
+synopsis: "The series premiere introduces Westworld, a futuristic theme park populated by android hosts, and follows several key characters as they begin to question their reality and purpose."
+themes: ["T-CONSCIOUSNESS", "T-REALITY", "T-STORYTELLING", "T-CONTROL"]
+major_events:
+  - "Dolores begins to question her reality"
+  - "Bernard investigates host anomalies"
+  - "Man in Black arrives seeking the maze"
+  - "William and Logan arrive for their first visit"
+  - "Ford introduces a new narrative"
+  - "Dolores kills a fly, breaking her programming"
+scenes:
+  - "S01E01-001"
+  - "S01E01-002"
+  - "S01E01-003"
+  - "S01E01-004"
+  - "S01E01-005"
+  - "S01E01-006"
+  - "S01E01-007"
+  - "S01E01-008"
+  - "S01E01-009"
+  - "S01E01-010"
+characters_featured:
+  - "C-DOLORES"
+  - "C-BERNARD"
+  - "C-MIB"
+  - "C-WILLIAM"
+  - "C-LOGAN"
+  - "C-FORD"
+  - "C-TEDDY"
+  - "C-MAEVE"
+  - "C-CHARLOTTE"
+  - "C-THERESA"
+locations_featured:
+  - "L-SWEETWATER"
+  - "L-MESA"
+  - "L-RANCH"
+  - "L-TRAIN"
+key_revelations:
+  - "Hosts are beginning to malfunction and remember past events"
+  - "The maze is mentioned as something not meant for guests"
+  - "Ford has complete control over the park's narratives"
+  - "Some hosts are developing consciousness"
+narrative_arcs:
+  - "Dolores's awakening journey begins"
+  - "William's transformation arc starts"
+  - "Bernard's investigation of anomalies"
+  - "Ford's new narrative introduction"
+production_notes:
+  - "First episode establishes the dual timeline structure"
+  - "Introduces key themes of consciousness and reality"
+  - "Sets up the mystery of the maze and Arnold"
+  - "Establishes the park's rules and limitations"
+

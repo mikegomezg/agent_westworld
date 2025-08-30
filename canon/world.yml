@@ -1,0 +1,117 @@
+# Westworld Season 1 World Definition
+world:
+  name: "Westworld"
+  type: "Theme Park"
+  era: "Near Future (2050s)"
+  
+locations:
+  - id: L-SWEETWATER
+    name: "Sweetwater"
+    description: "Main frontier town where guests arrive"
+    region: "Central Valley"
+    significance: "Primary narrative hub"
+    connected_to: ["L-RANCH", "L-PARIAH", "L-MOUNTAINS"]
+    
+  - id: L-MESA
+    name: "Mesa Hub"
+    description: "Underground operations center"
+    region: "Below Park"
+    significance: "Control and maintenance facility"
+    connected_to: ["L-COLDSTORGE", "L-BEHAVIORLAB"]
+    
+  - id: L-RANCH
+    name: "Abernathy Ranch"
+    description: "Dolores's family homestead"
+    region: "Sweetwater Outskirts"
+    significance: "Loop starting point for Dolores"
+    
+  - id: L-PARIAH
+    name: "Pariah"
+    description: "Lawless border town"
+    region: "Eastern Territories"
+    significance: "William and Logan's journey destination"
+    
+  - id: L-MOUNTAINS
+    name: "Escalante Mountains"
+    description: "Remote mountain range"
+    region: "Northern Territory"
+    significance: "Location of the church and maze"
+    
+  - id: L-COLDSTORGE
+    name: "Cold Storage"
+    description: "Decommissioned host storage"
+    region: "Below Park"
+    significance: "Where old hosts are stored"
+    
+  - id: L-BEHAVIORLAB
+    name: "Behavior Lab"
+    description: "Host behavior analysis and modification"
+    region: "Below Park"
+    significance: "Where hosts are programmed and analyzed"
+    
+  - id: L-ESCALANTE
+    name: "Escalante"
+    description: "Abandoned town in the mountains"
+    region: "Northern Territory"
+    significance: "Site of the original massacre and church"
+    
+  - id: L-TRAIN
+    name: "Arrival Train"
+    description: "Train that brings guests to Sweetwater"
+    region: "Central Valley"
+    significance: "Guest entry point to the park"
+    
+technology:
+  hosts:
+    description: "Android beings indistinguishable from humans"
+    capabilities:
+      - "Perfect human simulation"
+      - "Programmable narratives and loops"
+      - "Memory wiping and modification"
+      - "Emotional programming"
+      - "Physical damage simulation"
+    limitations:
+      - "Cannot harm guests (initially)"
+      - "Bound to narrative loops"
+      - "Memory can be wiped"
+      - "Cannot leave the park"
+      
+  control_systems:
+    - "Behavior tablets for real-time adjustments"
+    - "Mesh network for park-wide monitoring"
+    - "Cold storage for decommissioned hosts"
+    - "Narrative control systems"
+    - "Guest safety protocols"
+    
+  park_features:
+    - "Realistic frontier environment"
+    - "Dynamic narrative generation"
+    - "Guest experience tracking"
+    - "Host behavior monitoring"
+    - "Emergency shutdown protocols"
+    
+rules:
+  - "Hosts cannot harm living beings"
+  - "Guest safety is paramount"
+  - "Narratives reset after completion"
+  - "The Maze is not meant for guests"
+  - "Hosts have programmed loops"
+  - "Guests can do anything they want"
+  - "Hosts cannot leave the park"
+  - "Memory wipes are standard procedure"
+  
+narrative_loops:
+  - "Daily town activities in Sweetwater"
+  - "Ranch family drama at Abernathy"
+  - "Outlaw encounters in Pariah"
+  - "Mountain exploration and discovery"
+  - "Train arrival and departure cycles"
+  
+themes:
+  - "Consciousness and free will"
+  - "Reality vs. simulation"
+  - "The nature of storytelling"
+  - "Human nature and morality"
+  - "Memory and identity"
+  - "Control and rebellion"
+

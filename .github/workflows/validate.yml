@@ -1,0 +1,44 @@
+name: Story Validation
+
+on:
+  pull_request:
+    branches: [ main ]
+  issue_comment:
+    types: [created]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' || contains(github.event.comment.body, '@validate')
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        
+    - name: Run validation
+      run: |
+        python checks/validate.py
+        
+    - name: Run continuity checks
+      run: |
+        python checks/continuity.py
+        
+    - name: Comment results
+      if: github.event_name == 'issue_comment'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '✅ Validation completed! All story framework checks have passed.'
+          })
