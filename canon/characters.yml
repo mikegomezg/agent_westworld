@@ -267,3 +267,21 @@ characters:
     backstory: "William's experienced brother-in-law who guides him through the park and shows him its darker aspects, leading to William's transformation."
     narrative_function: "Catalyst for William's transformation"
 
+  - id: C-PETER
+    name: Peter Abernathy
+    full_name: Peter Abernathy
+    type: host
+    role: "Dolores's father and rancher"
+    status: active
+    first_appearance: S01E01
+    traits:
+      - "Protective of his family"
+      - "Curious about inconsistencies"
+      - "Susceptible to glitches when confronted with reality"
+    goals:
+      - "Keep his family safe"
+      - "Understand the photograph he finds"
+    relationships:
+      DOLORES: "Daughter"
+    backstory: "Original host designed as Dolores's father. After discovering a photograph from the outside world, he begins to malfunction and questions his reality."
+    narrative_function: "Catalyst for Dolores's awakening"

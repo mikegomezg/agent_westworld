@@ -1,0 +1,29 @@
+id: S01E01-003
+episode: S01E01
+title: "Peter's Malfunction"
+location: L-RANCH
+characters: ["C-PETER", "C-DOLORES"]
+timestamp: "Night"
+synopsis: "Peter Abernathy finds a photograph from the outside world, triggering a glitch that leads him to whisper 'These violent delights have violent ends' to Dolores, unsettling her and hinting at deeper awareness."
+
+themes: ["T-REALITY", "T-CONSCIOUSNESS"]
+reveals:
+  - "Peter discovers a photograph suggesting a world beyond the park"
+  - "The phrase 'These violent delights have violent ends' passes to Dolores"
+conflicts:
+  - "Peter's programmed loop vs. emerging awareness"
+  - "Dolores's desire for normalcy vs. growing unease"
+
+dialogue:
+  - "These violent delights have violent ends."
+  - "You have to see it for yourself, Dolores."
+
+emotions: ["Confused", "Fearful"]
+actions:
+  - "Peter studies the photograph"
+  - "He shows the photo to Dolores"
+  - "He glitches and repeats the ominous phrase"
+
+connections:
+  - "Sets up the contagious phrase that awakens hosts"
+  - "Foreshadows Dolores's journey toward consciousness"
