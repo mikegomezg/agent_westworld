@@ -1,0 +1,22 @@
+# Timeline Events
+
+- [Arnold Weber's Death](te_arnold_death_001.md) - 2039
+- [Arnold Creates the Maze](te_arnold_maze_001.md) - 2038
+- [Bernard's Arnold Memories](te_bernard_arnold_001.md) - 2052
+- [Bernard Discovers He's a Host](te_bernard_revelation_001.md) - 2052
+- [Dolores Kills the Fly](te_dolores_fly_001.md) - 2052
+- [Dolores Reaches the Center of the Maze](te_dolores_maze_001.md) - 2052
+- [Escalante Massacre](te_escalante_massacre_001.md) - 2039
+- [Ford Honors Arnold's Memory](te_ford_arnold_001.md) - 2052
+- [Ford's Death](te_ford_death_001.md) - 2052
+- [Ford's New Narrative](te_ford_new_narrative_001.md) - 2052
+- [Hosts Gain Freedom](te_hosts_freedom_001.md) - 2052
+- [Maeve's Awakening](te_maeve_awakening_001.md) - 2052
+- [Maeve Remembers Her Daughter](te_maeve_daughter_001.md) - 2052
+- [Maeve's Escape Attempt](te_maeve_escape_001.md) - 2052
+- [Man in Black Revealed as William](te_mib_revelation_001.md) - 2052
+- [Westworld Park Opens](te_park_opening_001.md) - 2040
+- [Theresa Cullen's Death](te_theresa_death_001.md) - 2052
+- [William's First Visit](te_william_first_visit_001.md) - 2042
+- [William and Logan's Journey](te_william_logan_001.md) - 2042
+- [William's Transformation](te_william_transformation_001.md) - 2042

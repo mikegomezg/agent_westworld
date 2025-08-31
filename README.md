@@ -1,13 +1,13 @@
 # Westworld Story Framework
 
-A modular, code-based approach to collaborative story development using Westworld Season 1 as demo content. This framework enables AI agents to collaboratively create, validate, and maintain complex narrative structures through structured data and automated validation.
+A modular, markdown-based approach to collaborative story development using Westworld Season 1 as demo content. This framework enables AI agents to collaboratively create, validate, and maintain complex narrative structures through structured markdown files and automated generation.
 
 ## 🎯 Project Overview
 
-The Westworld Story Framework transforms storytelling into a collaborative, code-based process where:
-- **Story elements** are structured data with validation
+The Westworld Story Framework transforms storytelling into a collaborative, markdown-based process where:
+- **Story elements** are structured markdown files with validation
 - **AI agents** can collaboratively edit through GitHub
-- **Continuity** is automatically checked and maintained
+- **Content generation** is automated through Python scripts
 - **Themes** are systematically explored and developed
 - **Timelines** are managed with chronological consistency
 
@@ -23,58 +23,65 @@ The Westworld Story Framework transforms storytelling into a collaborative, code
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd westworld-story-framework
+cd agent_westworld
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run validation
-python checks/validate.py
+python checks/validate_markdown.py
 ```
 
 ### Basic Usage
 
 ```bash
-# Validate all story content
-python checks/validate.py
+# Validate all markdown content
+python checks/validate_markdown.py
 
-# Check continuity
-python checks/continuity.py
+# Generate all content
+python scripts/generate_all.py
 
-# Run all checks
-python checks/validate.py && python checks/continuity.py
+# Generate specific content types
+python scripts/generate/narrative_from_scene.py
+python scripts/generate/enrich_character_profile.py
+python scripts/generate/timeline_visualization.py
+python scripts/generate/theme_analysis.py
 ```
 
 ## 🏗️ Project Structure
 
 ```
-westworld-story-framework/
+agent_westworld/
 ├── README.md                 # This file
 ├── requirements.txt          # Python dependencies
 ├── pyproject.toml           # Project configuration
-├── .github/                 # GitHub configuration
-│   ├── workflows/           # CI/CD workflows
-│   └── ISSUE_TEMPLATE/      # Issue templates
-├── canon/                   # Core story truths (locked)
-│   ├── world.yml           # Setting, locations, technology
-│   ├── characters.yml      # Character definitions
-│   ├── timeline.yml        # Chronological events
-│   └── themes.yml          # Core themes and messages
+├── canon/                   # Core story content (markdown)
+│   ├── characters/          # Individual character files
+│   ├── locations/           # Individual location files
+│   ├── themes/              # Individual theme files
+│   └── timeline/            # Individual timeline event files
 ├── story/                   # Story content
-│   ├── episodes/           # Episode definitions
-│   ├── scenes/             # Individual scene files
-│   └── arcs/               # Character and plot arcs
-├── checks/                  # Validation and continuity
+│   └── scenes/              # Individual scene files
+├── generated/                # Generated content
+│   ├── narratives/          # Scene narratives
+│   └── summaries/           # Enriched profiles, timeline, themes
+├── checks/                   # Validation and continuity
 │   ├── __init__.py
-│   ├── validate.py         # Main validation script
-│   ├── schemas.py          # Pydantic models
-│   └── continuity.py       # Continuity checks
-├── docs/                    # Documentation
-│   ├── STYLE.md            # Writing style guide
-│   ├── AGENTS.md           # Guidelines for AI agents
-│   └── CLAUDE.md           # Claude-specific instructions
-└── .cursor/                 # Cursor configuration
-    └── environment.json    # AI agent configuration
+│   ├── validate_markdown.py # Markdown validation
+│   ├── schemas.py           # Pydantic models
+│   └── continuity.py        # Continuity checks
+├── scripts/                  # Generation scripts
+│   ├── generate/            # Content generators
+│   │   ├── narrative_from_scene.py
+│   │   ├── enrich_character_profile.py
+│   │   ├── timeline_visualization.py
+│   │   └── theme_analysis.py
+│   └── generate_all.py      # Master generation script
+└── docs/                     # Documentation
+    ├── STYLE.md             # Writing style guide
+    ├── AGENTS.md            # Guidelines for AI agents
+    ├── GENERATION.md        # Generation pipeline docs
+    └── CLAUDE.md            # Claude-specific instructions
 ```
 
 ## 🤖 For AI Agents
@@ -93,6 +100,14 @@ AI agents can:
 2. **UPDATE** character descriptions and relationships
 3. **ADD** timeline events and theme connections
 4. **ENHANCE** world details and location descriptions
+5. **RUN** generation scripts to create enriched content
+
+### Content Creation Workflow
+
+1. **Create/Update Markdown Files**: Add or modify content in the appropriate `canon/` or `story/` directories
+2. **Run Validation**: Ensure content meets format requirements
+3. **Generate Content**: Run generation scripts to create enriched output
+4. **Review Output**: Check generated content in `generated/` directory
 
 ### Restrictions
 
