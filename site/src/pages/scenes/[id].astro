@@ -12,34 +12,56 @@ export function getStaticPaths() {
 }
 
 const { scene } = Astro.props;
+
+// Safety check for scene data
+if (!scene) {
+    return Astro.redirect("/scenes");
+}
+
 const characters = loadAllCharacters();
 const world = loadWorld();
-const narrative = generateSceneNarrative(scene, characters, world);
+
+// Generate narrative with error handling
+let narrative = "Unable to generate narrative for this scene.";
+try {
+    narrative = generateSceneNarrative(scene, characters, world);
+} catch (error) {
+    console.error("Error generating narrative:", error);
+    narrative = `## Error Generating Narrative\n\nThere was an error generating the narrative for this scene: ${error.message}`;
+}
 ---
 
-<Layout title={scene.title}>
-    <h1>{scene.title}</h1>
-    <p class="meta">Episode {scene.episode} | {scene.location}</p>
+<Layout title={scene.title || "Unknown Scene"}>
+    <h1>{scene.title || "Unknown Scene"}</h1>
+    <p class="meta">
+        Episode {scene.episode || "Unknown"} | {scene.location || "Unknown Location"}
+    </p>
 
     <section>
         <h2>Synopsis</h2>
-        <p>{scene.synopsis}</p>
+        <p>{scene.synopsis || "No synopsis available."}</p>
     </section>
 
     <section>
         <h2>Characters</h2>
-        <ul>
-            {
-                scene.characters.map((charId) => {
-                    const char = characters.find((c) => c.id === charId);
-                    return (
-                        <li>
-                            <a href={`/characters/${charId}`}>{char?.name || charId}</a>
-                        </li>
-                    );
-                })
-            }
-        </ul>
+        {
+            scene.characters && scene.characters.length > 0 ? (
+                <ul>
+                    {scene.characters.map((charId) => {
+                        const char = characters.find((c) => c.id === charId);
+                        return (
+                            <li>
+                                <a href={`/characters/${charId}`}>
+                                    {char?.name || charId}
+                                </a>
+                            </li>
+                        );
+                    })}
+                </ul>
+            ) : (
+                <p>No characters listed for this scene.</p>
+            )
+        }
     </section>
 
     <section>
@@ -49,9 +71,17 @@ const narrative = generateSceneNarrative(scene, characters, world);
 
     <section>
         <h2>Themes</h2>
-        <ul>
-            {scene.themes?.map((theme) => <li>{theme}</li>)}
-        </ul>
+        {
+            scene.themes && scene.themes.length > 0 ? (
+                <ul>
+                    {scene.themes.map((theme) => (
+                        <li>{theme}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No themes listed for this scene.</p>
+            )
+        }
     </section>
 
     <style>

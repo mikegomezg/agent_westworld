@@ -17,7 +17,9 @@ const characters = loadAllCharacters();
                     </h3>
                     <p class="character-role">{character.role}</p>
                     <p class="character-description">{character.description}</p>
-                    {character.relationships && (
+                    {character.relationships &&
+                    Array.isArray(character.relationships) &&
+                    character.relationships.length > 0 ? (
                         <div class="character-relationships">
                             <strong>Key Relationships:</strong>
                             <ul>
@@ -28,7 +30,7 @@ const characters = loadAllCharacters();
                                 ))}
                             </ul>
                         </div>
-                    )}
+                    ) : null}
                 </div>
             ))
         }

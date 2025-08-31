@@ -28,20 +28,26 @@ const characterScenes = allScenes.filter(
 
     <section>
         <h2>Appearances</h2>
-        <ul>
-            {
-                characterScenes.map((scene) => (
-                    <li>
-                        <a href={`/scenes/${scene.id}`}>{scene.title}</a>
-                        <span> - Episode {scene.episode}</span>
-                    </li>
-                ))
-            }
-        </ul>
+        {
+            characterScenes.length > 0 ? (
+                <ul>
+                    {characterScenes.map((scene) => (
+                        <li>
+                            <a href={`/scenes/${scene.id}`}>{scene.title}</a>
+                            <span> - Episode {scene.episode}</span>
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No scenes found for this character.</p>
+            )
+        }
     </section>
 
     {
-        character.relationships && (
+        character.relationships &&
+        Array.isArray(character.relationships) &&
+        character.relationships.length > 0 ? (
             <section>
                 <h2>Relationships</h2>
                 <ul>
@@ -52,7 +58,7 @@ const characterScenes = allScenes.filter(
                     ))}
                 </ul>
             </section>
-        )
+        ) : null
     }
 
     <style>

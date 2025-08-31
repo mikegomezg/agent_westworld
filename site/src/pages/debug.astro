@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {
+    loadAllCharacters,
+    loadAllScenes,
+    loadTimeline,
+    loadWorld,
+} from "../utils/yaml-loader.js";
+
+const characters = loadAllCharacters();
+const scenes = loadAllScenes();
+const timeline = loadTimeline();
+const world = loadWorld();
+---
+
+<Layout title="Debug - Data Loading">
+    <h1>Debug: Data Loading Status</h1>
+
+    <section>
+        <h2>Characters Loaded: {characters.length}</h2>
+        <pre>{JSON.stringify(characters.slice(0, 2), null, 2)}</pre>
+    </section>
+
+    <section>
+        <h2>Scenes Loaded: {scenes.length}</h2>
+        <pre>{JSON.stringify(scenes.slice(0, 2), null, 2)}</pre>
+    </section>
+
+    <section>
+        <h2>Timeline Events: {timeline.length}</h2>
+        <pre>{JSON.stringify(timeline.slice(0, 2), null, 2)}</pre>
+    </section>
+
+    <section>
+        <h2>World Data</h2>
+        <pre>{JSON.stringify(world, null, 2)}</pre>
+    </section>
+
+    <style>
+        pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</Layout>
