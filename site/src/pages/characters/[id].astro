@@ -1,0 +1,65 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { loadAllCharacters, loadAllScenes } from "../../utils/yaml-loader.js";
+
+export function getStaticPaths() {
+    const characters = loadAllCharacters();
+    return characters.map((character) => ({
+        params: { id: character.id },
+        props: { character },
+    }));
+}
+
+const { character } = Astro.props;
+const allScenes = loadAllScenes();
+const characterScenes = allScenes.filter(
+    (scene) => scene.characters && scene.characters.includes(character.id),
+);
+---
+
+<Layout title={character.name}>
+    <h1>{character.name}</h1>
+    <p class="meta">{character.role}</p>
+
+    <section>
+        <h2>Description</h2>
+        <p>{character.description}</p>
+    </section>
+
+    <section>
+        <h2>Appearances</h2>
+        <ul>
+            {
+                characterScenes.map((scene) => (
+                    <li>
+                        <a href={`/scenes/${scene.id}`}>{scene.title}</a>
+                        <span> - Episode {scene.episode}</span>
+                    </li>
+                ))
+            }
+        </ul>
+    </section>
+
+    {
+        character.relationships && (
+            <section>
+                <h2>Relationships</h2>
+                <ul>
+                    {character.relationships.map((rel) => (
+                        <li>
+                            <strong>{rel.type}:</strong> {rel.target}
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        )
+    }
+
+    <style>
+        .meta {
+            color: #666;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+    </style>
+</Layout>

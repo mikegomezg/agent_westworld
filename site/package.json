@@ -1,0 +1,17 @@
+{
+    "name": "westworld-viewer",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "npm run generate && astro build",
+        "preview": "astro preview",
+        "generate": "python ../scripts/generate-narrative.py"
+    },
+    "dependencies": {
+        "astro": "^3.0.0",
+        "@astrojs/vercel": "^4.0.0",
+        "js-yaml": "^4.1.0"
+    }
+}

@@ -1,0 +1,52 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title} - Westworld Story Framework</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/characters">Characters</a>
+            <a href="/scenes">Scenes</a>
+            <a href="/timeline">Timeline</a>
+            <a href="/narrative">Narratives</a>
+        </nav>
+        <main>
+            <slot />
+        </main>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                line-height: 1.6;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            nav {
+                display: flex;
+                gap: 20px;
+                padding: 20px 0;
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 30px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+            }
+            nav a:hover {
+                color: #0066cc;
+            }
+        </style>
+    </body>
+</html>
