@@ -1,2 +1,5 @@
 !requirements.txt
 node_modules
+
+# Keep generated narratives
+!narratives/

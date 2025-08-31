@@ -1,0 +1,40 @@
+title: Westworld Story Framework
+description: Collaborative story development using Westworld S1
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Include our story directories
+include:
+  - canon
+  - story
+  
+# Navigation
+header_pages:
+  - index.md
+  - characters.md
+  - scenes.md
+  - narratives.md
+
+# Collections
+collections:
+  narratives:
+    output: true
+    permalink: /narratives/:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - site/
+  - scripts/
+  - checks/
+  - .github/
+  - .cursor/
+  - pyproject.toml
+  - requirements.txt
+  - agent_westworld.code-workspace

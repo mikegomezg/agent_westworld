@@ -1,0 +1,58 @@
+name: Generate Site Content
+
+on:
+  push:
+    paths:
+      - 'canon/**'
+      - 'story/**'
+      - 'scripts/generate_site_content.py'
+  workflow_dispatch:
+  schedule:
+    # Run daily at 2 AM UTC to ensure content is fresh
+    - cron: '0 2 * * *'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+      
+      - name: Generate narratives
+        run: python scripts/generate_site_content.py
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add narratives/
+          git add narratives.md
+          git commit -m "Generate narratives [skip ci]"
+          git push
+      
+      - name: No changes
+        if: steps.check_changes.outputs.changes == 'false'
+        run: echo "No changes to commit"
