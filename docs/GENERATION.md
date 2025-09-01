@@ -356,3 +356,4 @@ You can create custom generation scripts by following the pattern:
 ## Conclusion
 
 The markdown-based generation pipeline provides a robust, scalable foundation for the Westworld framework. It enables autonomous agents to create and update content while maintaining human readability and reviewability. The system is designed to grow with your needs and can be easily extended with new content types and generation capabilities.
+
