@@ -114,7 +114,8 @@ def generate_narrative_index(narratives_dir):
 
             # Try to extract title from the narrative file
             title = narrative_file.stem.replace('_', ' ').title()
-            content.append(f"- [{title}](narratives/{narrative_file.stem}.html)")
+            # Use directory-style links to match Jekyll pretty permalinks
+            content.append(f"- [{title}](narratives/{narrative_file.stem}/)")
 
     content.extend([
         "",
@@ -133,7 +134,7 @@ def generate_narrative_index(narratives_dir):
     ])
 
     with open(output, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(content))
+        f.write('\n'.join(content) + '\n')
 
 def generate_narratives():
     """Main function to generate all narratives."""
@@ -212,10 +213,11 @@ def generate_narratives():
             continue
 
         scene_id = narrative_file.stem
-        index_content.append(f"- [{scene_id}]({scene_id}.html)")
+        # Link to directory to support pretty permalinks
+        index_content.append(f"- [{scene_id}]({scene_id}/)")
 
     with open(narratives_index, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(index_content))
+        f.write('\n'.join(index_content) + '\n')
 
     print("SUCCESS: Generated narratives index file")
 
