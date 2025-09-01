@@ -84,6 +84,20 @@ agent_westworld/
     └── CLAUDE.md            # Claude-specific instructions
 ```
 
+## 🌐 GitHub Pages Mapping
+
+The repository is published to GitHub Pages with the following page mapping:
+
+| Repository File/Folder | Published URL |
+| ---------------------- | ------------- |
+| `index.md` | `/` |
+| `characters.md` | `/characters/` |
+| `scenes.md` | `/scenes/` |
+| `narratives.md` | `/narratives/` |
+| `narratives/<ID>.md` | `/narratives/<ID>/` |
+
+Static data such as files in `canon/` and `story/` are served at matching paths, allowing direct links from the site to the source data.
+
 ## 🤖 For AI Agents
 
 ### Triggering Work
